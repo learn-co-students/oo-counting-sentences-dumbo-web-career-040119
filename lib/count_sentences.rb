@@ -30,7 +30,7 @@ class String
   end
 
   def count_sentences
-    splitted = self.split(/\.|\?|\!/).delete_if {|word| word.size < 2}
+    splitted = self.split(/\.|\?|\!/) #.delete_if {|word| word.size < 2}
     splitted.size
   end
 end
